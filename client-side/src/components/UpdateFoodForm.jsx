@@ -61,31 +61,31 @@ const UpdateFoodForm = () => {
                                 <div className="mb-5 col-lg-4 col-12">
                                     <label htmlFor="exampleInputFoodName" className="form-label">Food Name</label>
                                     <input defaultValue={food !== null ? (food["foodName"]) : ""} type="text" className="form-control" id="exampleInputFoodName"
-                                           name="foodName"/>
+                                           name="foodName" required />
                                 </div>
                                 <div className="mb-5 col-lg-4">
                                     <label htmlFor="exampleInputFoodCode" className="form-label">Food Code</label>
                                     <input defaultValue={food !== null ? (food["foodCode"]) : ""} type="text" className="form-control" id="exampleInputFoodCode"
-                                           name="foodCode"/>
+                                           name="foodCode" required />
                                 </div>
                                 <div className="mb-5 col-lg-4">
                                     <label htmlFor="exampleInputFoodImage" className="form-label">Food Image</label>
                                     <input defaultValue={food !== null ? (food["foodImg"]) : ""} type="text" className="form-control" id="exampleInputFoodImage"
-                                           name="foodImg"/>
+                                           name="foodImg" required />
                                 </div>
                                 <div className="mb-5 col-lg-4">
                                     <label htmlFor="exampleInputFoodCategory" className="form-label">Food
                                         Category </label>
                                     <input defaultValue={food !== null ? (food["foodCategory"]) : ""} type="text" className="form-control" id="exampleInputFoodCategory"
-                                           name="foodCategory"/>
+                                           name="foodCategory" required />
                                 </div>
                                 <div className="mb-5 col-lg-4">
                                     <label htmlFor="exampleInputQTY" className="form-label">QTY</label>
-                                    <input defaultValue={food !== null ? (food["qty"]) : ""} type="text" className="form-control" id="exampleInputQTY" name="qty"/>
+                                    <input defaultValue={food !== null ? (food["qty"]) : ""} type="text" className="form-control" id="exampleInputQTY" name="qty" required />
                                 </div>
                                 <div className="mb-5 col-lg-4">
                                     <label htmlFor="exampleInputPrice" className="form-label">Price</label>
-                                    <input defaultValue={food !== null ? (food["price"]) : ""} type="text" className="form-control" id="exampleInputPrice" name="price"/>
+                                    <input defaultValue={food !== null ? (food["price"]) : ""} type="text" className="form-control" id="exampleInputPrice" name="price" required />
                                 </div>
                             </div>
                             <button type="submit" className="btn btn-primary ButtON">Update</button>
